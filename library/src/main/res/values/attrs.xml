@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BubbleImageView">
+
+        <!--图片显示区域最大宽度-->
+        <attr name="maxWidth" format="dimension" />
+
+        <!--图片显示区域最大高度-->
+        <attr name="maxHeight" format="dimension" />
+
+        <!--图片气泡背景-->
+        <attr name="imageBubble" format="reference" />
+
+        <!--图片加中图标-->
+        <attr name="imageDefaultIcon" format="reference" />
+
+        <!--图片加载失败图标-->
+        <attr name="imageErrorIcon" format="reference" />
+
+        <!--图片的点击色-->
+        <attr name="pressedColor" format="color" />
+
+        <!--加载默认图的背景色-->
+        <attr name="defaultColor" format="color" />
+
+        <!--气泡箭头的宽度-->
+        <attr name="arrowWidth" format="dimension" />
+
+        <attr name="iconMaxSize" format="dimension" />
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/leftImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/shape_chat_avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_common_default_avatar" />
+
+    <ImageView
+        android:id="@+id/rightImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_chat_avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_common_default_avatar" />
+
+    <RelativeLayout
+        android:id="@+id/bubbleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:minHeight="32dp">
+
+        <com.yanguang.bubble.BubbleImageView
+            android:id="@+id/bubbleImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:arrowWidth="3dp"
+            app:defaultColor="#eeeeee"
+            app:iconMaxSize="40dp"
+            app:imageDefaultIcon="@drawable/ic_default_picture"
+            app:imageErrorIcon="@drawable/ic_default_error"
+            app:maxHeight="200dp"
+            app:maxWidth="200dp"
+            app:pressedColor="#22000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
