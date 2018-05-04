@@ -9,9 +9,9 @@ import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.RelativeLayout
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
-import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.dream.yanguang.R
 import com.yanguang.bubble.BubbleImageBitmapLoader
@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 2 -> {
                     entity = ImageEntity(1200, 675, "http://imgsrc.baidu.com/imgad/pic/item/34fae6cd7b899e51fab3e9c048a7d933c8950d21.jpg")
-//                    entity.waitTime = 1500
                 }
             }
             when (count % 2) {
@@ -123,59 +122,16 @@ class MainActivity : AppCompatActivity() {
                     Log.i("ImageLoadListener", "" + errorMessage)
                 }
             })
+
+            bubbleImageView.setOnClickListener {
+                Toast.makeText(this@MainActivity, "onClick", Toast.LENGTH_SHORT).show()
+            }
+
+            bubbleImageView.setOnLongClickListener {
+                Toast.makeText(this@MainActivity, "onLongClick", Toast.LENGTH_SHORT).show()
+                false
+            }
         }
 
     }
-
-//    inner class TestAdapter(layout: Int) : BaseQuickAdapter<ImageEntity, BaseViewHolder>(layout) {
-//        override fun convert(holder: BaseViewHolder, item: ImageEntity) {
-//
-//            var bubbleImageView = holder.getView<BubbleImageView>(R.id.bubbleImageView)
-//            var leftImage = holder.getView<ImageView>(R.id.leftImage)
-//            var rightImage = holder.getView<ImageView>(R.id.rightImage)
-//
-//            var arrowDirect: Int
-//
-//
-//            if (item.isLeft) {
-//                bubbleImageView.setBubbleImage(R.drawable.ic_chat_from_bubble_normal)
-//                (bubbleImageView.layoutParams as RelativeLayout.LayoutParams).addRule(RelativeLayout.ALIGN_PARENT_LEFT)
-//                arrowDirect = BubbleImageView.ArrowDirect.LEFT
-//                leftImage.visibility = View.VISIBLE
-//                rightImage.visibility = View.GONE
-//
-//            } else {
-//                bubbleImageView.setBubbleImage(R.drawable.ic_chat_to_bubble_normal)
-//                (bubbleImageView.layoutParams as RelativeLayout.LayoutParams).addRule(RelativeLayout.ALIGN_PARENT_RIGHT)
-//                arrowDirect = BubbleImageView.ArrowDirect.RIGHT
-//                leftImage.visibility = View.GONE
-//                rightImage.visibility = View.VISIBLE
-//            }
-//
-//            bubbleImageView.setLoadingWaitTime(item.waitTime)
-//            bubbleImageView.setImage(item.width, item.height, item.url, arrowDirect, object : BubbleImageBitmapLoader {
-//
-//                //此方法实在子线程中运行
-//                override fun getBitmap(context: Context, imagePath: Any): Bitmap? {
-//                    var imageBitmap: Bitmap? = null
-//                    try {
-//                        imageBitmap = Glide.with(context).asBitmap().load(imagePath).submit().get()
-//                    } catch (e: Exception) {
-//
-//                    }
-//                    return imageBitmap
-//                }
-//            })
-//            bubbleImageView.setImageLoadListener(object : BubbleImageListener {
-//                override fun onSuccess() {
-//                    Log.i("ImageLoadListener", "onSuccess")
-//                }
-//
-//                override fun onFailed(errorMessage: String) {
-//                    Log.i("ImageLoadListener", "" + errorMessage)
-//                }
-//            })
-//        }
-//    }
-
 }

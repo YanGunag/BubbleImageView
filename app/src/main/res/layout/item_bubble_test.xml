@@ -39,6 +39,7 @@
             app:arrowWidth="3dp"
             app:defaultColor="#eeeeee"
             app:iconMaxSize="40dp"
+            app:imageBubble="@drawable/ic_chat_from_bubble_normal"
             app:imageDefaultIcon="@drawable/ic_default_picture"
             app:imageErrorIcon="@drawable/ic_default_error"
             app:maxHeight="200dp"
