@@ -9,6 +9,10 @@
 ![img](https://github.com/YanGunag/BubbleImageView/blob/master/20180504161609.jpg)
 
 
+
+
+
+
 ##使用方式
 
 ```xml
@@ -31,7 +35,8 @@
         
         
         
-###参数说明
+####属性说明
+
     arrowWidth:气泡箭头的宽度
     defaultColor：默认图片的背景色
     pressedColor：气泡图片点击背景色
@@ -62,7 +67,7 @@ bubbleImageView.setImage(imageWidth, imageHeight, imagePath, arrowDirect, object
 
 
 
-###参数说明
+####参数说明
 
     imageWidth:要加载图片的宽度
     imageHeight：要加载图片的高度
