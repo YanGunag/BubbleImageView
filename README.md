@@ -11,7 +11,7 @@
 
 ##使用方式
 
-```
+```xml
   <com.yanguang.bubble.BubbleImageView
         android:id="@+id/bubbleImageView"
         android:layout_width="wrap_content"
@@ -27,7 +27,11 @@
         app:maxWidth="200dp"
         app:pressedColor="#22000000" />
 ```
-####属性说明
+     
+        
+        
+        
+###参数说明
     arrowWidth:气泡箭头的宽度
     defaultColor：默认图片的背景色
     pressedColor：气泡图片点击背景色
@@ -54,12 +58,19 @@ bubbleImageView.setImage(imageWidth, imageHeight, imagePath, arrowDirect, object
             }
         })
 ```
-####参数说明
+
+
+
+
+###参数说明
+
     imageWidth:要加载图片的宽度
     imageHeight：要加载图片的高度
     imagePath：图片路径
     arrowDirect：气泡箭头的方向（参见BubbleImageView.ArrowDirect）
     object：需要继承BubbleImageBitmapLoader接口，实现通过图片路径获取到bitmap
+
+
 
 ##其他方法
     
