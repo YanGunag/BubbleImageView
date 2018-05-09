@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BubbleImageView.iml" filepath="$PROJECT_DIR$/BubbleImageView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bubble-imageview/bubble-imageview.iml" filepath="$PROJECT_DIR$/bubble-imageview/bubble-imageview.iml" />
     </modules>
   </component>
 </project>

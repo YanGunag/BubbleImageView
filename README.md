@@ -10,7 +10,9 @@
 
 
 
-
+##接入方式
+    
+    compile 'com.yanguang.widget:bubble-imageview:1.0.0'
 
 
 ##使用方式

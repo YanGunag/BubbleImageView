@@ -32,6 +32,6 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:4.0.0'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.21'
 
-    compile project(':bubble-imageview')
-//    compile 'com.yanguang.widget:bubble-imageview:1.0.0'
+//    compile project(':bubble-imageview')
+    compile 'com.yanguang.widget:bubble-imageview:1.0.0'
 }
